@@ -405,7 +405,7 @@ body {
     width: 30%;
     background-color: #fff;
     position: absolute;
-    top: 40%;
+    top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
@@ -420,7 +420,9 @@ body {
 
 .overlay-delete {
     position: absolute;
-    height: 122%;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
