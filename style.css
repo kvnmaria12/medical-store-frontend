@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    height: 100%;
+    background: #009FFF;
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+    background: -moz-linear-gradient(to right, ##ec2F4B, #009FFF);
+    background: linear-gradient(to right, #ec2F4B, #009FFF);
+    position: relative;
+}
+
+.medicine {
+    position: absolute;
+    left: 2%;
+    top: 5px;
+}
+
+.title {
+    padding: 15px;
+    flex: 1;
+    margin-left: 70px;
+    color: white;
+    display: flex;
+}
+
+.title-a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.items ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.items ul li {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 4px;
+    padding: .9375rem;
+    position: relative;
+}
+
+.items ul li:hover {
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+}
+
+.items ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.items ul li a:hover {
+    color: #1A1A2E;
+}
+
+#create-data {
+    margin-right: 150px;
+}
+
+/* Table Section - Part -2 */
+.main {
+    min-height: 100vh;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Table Part */
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-weight: 600;
+    font-size: 18px;
+    background: #fff;
+    position: relative;
+    margin-top: 70px;
+
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table tbody tr {
+    position: relative;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table thead tr th:nth-child(4) {
+    margin-left: 20px;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    /* background-color: #9D9D9D; */
+    color: #000;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.content-table tbody tr td:nth-child(3) {
+    padding-left: 29px;
+}
+
+.homepage-txt {
+    position: absolute;
+    top: 13%;
+    left: 41%
+}
+
+
+
+.input-homepage {
+    min-width: 22%;
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-homepage {
+    outline: none;
+}
+
+.search-homepage {
+    position: absolute;
+    left: 59%;
+    top: 24%;
+    cursor: pointer;
+}
+
+
+.input-homepage::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.medicine-txt-create {
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
+}
+
+.medicine-txt-update {
+    margin-left: 62px;
+    margin-top: 20px;
+}
+
+
+.container-create {
+    background: #ffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    margin: 25px 0;
+    border-radius: 5px 5px 5px 5px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.container-update {
+    background: #ffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    margin: 25px 0;
+    border-radius: 5px 5px 5px 5px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.form-control-create {
+    padding: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-control-create input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #777;
+    border-radius: 5px;
+}
+
+.form-control-create input[type="text"] {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-control-create select {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #777;
+    font-weight: 600;
+}
+
+.form-control-create input:focus {
+    outline: 0;
+    border-color: skyblue;
+}
+
+.form-control-update {
+    padding: 20px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.form-control-update input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #777;
+    border-radius: 5px;
+}
+
+.form-control-update input[type="text"] {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-control-update select {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #777;
+    font-weight: 600;
+}
+
+.form-control-update input:focus {
+    outline: 0;
+    border-color: skyblue;
+}
+
+.btn-create {
+    padding: .625rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #777;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #012443;
+    color: #ffff;
+}
+
+.btn-create:hover {
+    cursor: pointer;
+    background-color: #1E3163;
+    border-color: #170055
+}
+
+.btn-update {
+    padding: .625rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #777;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #012443;
+    color: #ffff;
+    margin-top: 10px;
+}
+
+.btn-update:hover {
+    cursor: pointer;
+    background-color: #1E3163;
+    border-color: #170055
+}
+
+.success-msg-create {
+    text-align: center;
+    height: 100px;
+    width: 30%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.success-txt-create {
+    margin-top: 18px;
+    color: #FF0000;
+    line-height: 1.4;
+}
+
+.overlay-create {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+}
+
+.close-btn-create {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    background: none;
+    border: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.close-btn-create:hover {
+    transform: scale(1.03);
+}
+
+/* update data */
+.success-msg-update {
+    text-align: center;
+    height: 100px;
+    width: 30%;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.success-txt-update {
+    margin-top: 20px;
+    color: #FF0000;
+    line-height: 1.4;
+}
+
+.overlay-update {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+}
+
+.close-btn-update {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    background: none;
+    border: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.close-btn-update:hover {
+    transform: scale(1.03);
+}
+
+/* Delete Btn */
+.success-msg-delete {
+    text-align: center;
+    height: 100px;
+    width: 30%;
+    background-color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.success-txt-delete {
+    margin-top: 20px;
+    color: #FF0000;
+    line-height: 1.4;
+}
+
+.overlay-delete {
+    position: absolute;
+    height: 122%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+}
+
+.close-btn-delete {
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    background: none;
+    border: none;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.close-btn-delete:hover {
+    transform: scale(1.03);
+}
+
+.are-you-sure {
+    height: 111px;
+    min-width: 228px;
+    position: absolute;
+    top: 36%;
+    left: 36%;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    z-index: 10;
+}
+
+.are-you-sure-txt {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #000;
+    padding: 10px;
+
+}
+
+.are-you-sure-yes-btn {
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 10px;
+    top: 50%;
+    left: 20%;
+    cursor: pointer;
+    color: #000;
+}
+
+.are-you-sure-no-btn {
+    margin-bottom: 10px;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.are-you-sure-yes-btn:hover {
+    background: #170055;
+    color: #fff;
+}
+
+.are-you-sure-no-btn:hover {
+    background: #170055;
+    color: #fff;
+}
+
+.overlay-2-delete {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 2;
+}
+
+.create {
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.update {
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+.form-control-create.success .create {
+    color: #2ecc71;
+}
+
+.form-control-create.success input {
+    border-color: #2ecc71;
+}
+
+.form-control-create.error .create {
+    color: #e74c3c;
+}
+
+.form-control-create.error input {
+    border-color: #e74c3c;
+}
+
+.form-control-update.success .create {
+    color: #2ecc71;
+}
+
+.form-control-update.success input {
+    border-color: #2ecc71;
+}
+
+.form-control-update.error .create {
+    color: #e74c3c;
+}
+
+.form-control-update.error input {
+    border-color: #e74c3c;
+}
+
+.edit-icon {
+    align-items: center;
+    padding: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    color: #2ecc71;
+}
+
+.delete-icon {
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+    color: #ec2F4B;
+}
+
+
+strong {
+    color: #ec2F4B;
+}
