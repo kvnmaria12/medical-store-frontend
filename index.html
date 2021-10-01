@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/medicine.png" type="image/x-icon">
+    <title>Online Medical Store</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="title">
+            <img class="medicine" src="Images/medicine2.png" height="50px" width="50px" alt="">
+            <h2 class="title-para">
+                <a class="title-a" href="">Online Medical Store</a>
+            </h2>
+        </div>
+        <div class="items">
+            <ul>
+                <li>
+                    <a href="" id="create-data">
+                        Create Medicine
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section class="main">
+        <section class="table-section">
+            <h2 class="homepage-txt">List of all Medicines</h2>
+            <input id="medicine-name-homepage" class="input-homepage" type="text" placeholder="Search for a Medicine">
+            <i class="fas fa-search search-homepage"></i>
+            <table class="content-table">
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+            <div class="are-you-sure hidden">
+                <h2 class="are-you-sure-txt">Are you Sure?</h2>
+                <button class="are-you-sure-yes-btn">Yes</button>
+                <button class="are-you-sure-no-btn">No</button>
+            </div>
+
+            <div class="success-msg-delete hidden">
+                <button class="close-btn-delete">&times;</button>
+                <h2 class="success-txt-delete">Medicine Deleted Successfully</h2>
+            </div>
+
+            <div class="overlay-delete hidden"></div>
+        </section>
+
+        <div class="overlay-2-delete hidden"></div>
+
+
+        <!-- Create Data -->
+        <section class="table-section-create hidden">
+            <h2 class="medicine-txt-create">Create a Medicine Data</h2>
+            <div class="container-create">
+                <form id="form-create">
+                    <div class="form-container-create">
+                        <div class="form-control-create">
+                            <input id="name-create" type="text" placeholder="Name">
+                            <small class="create">Error Message</small>
+                        </div>
+                        <div class="form-control-create">
+                            <input id="price-create" type="text" placeholder="Price">
+                            <small class="create">Error Message</small>
+                        </div>
+                        <div class="form-control-create">
+                            <input id="quantity-create" type="text" placeholder="Quantity">
+                            <small class="create">Error Message</small>
+                        </div>
+                        <div class="form-control-create">
+                            <select name="Categories" id="categories-create">
+                                <option value="" disabled selected>Categories</option>
+                                <option value="1">Fever</option>
+                                <option value="2">Cold</option>
+                                <option value="3">Piles</option>
+                                <option value="4">Cancer</option>
+                            </select>
+                        </div>
+                        <div class="form-control-create">
+                            <input id="manufacture_date-create" type="text" placeholder="ManufactureDate"
+                                onfocus="(type='date')" onblur="(this.type='text')">
+                            <small class="create">Error Message</small>
+                        </div>
+                        <div class="form-control-create">
+                            <input id="expiry_date-create" type="text" placeholder="ExpiryDate" onfocus="(type='date')"
+                                onblur="(this.type='text')">
+                            <small class="create">Error Message</small>
+                        </div>
+
+                </form>
+                <button class="btn-create">Create</button>
+            </div>
+            </div>
+
+            <div class="success-msg-create hidden">
+                <button class="close-btn-create">&times;</button>
+                <h2 class="success-txt-create">Medicine Created Successfully</h2>
+            </div>
+
+            <div class="overlay-create hidden"></div>
+
+        </section>
+
+        <!-- Update Data -->
+        <section class="table-section-update hidden">
+            <h2 class="medicine-txt-update">Update a Medicine Data</h2>
+            <div class="container-update">
+                <form id="form-update">
+                    <div class="form-container">
+                        <div class="form-control-update">
+                            <input id="id-update" type="text" placeholder="Enter the Medicine Id">
+                            <small class="update">Error Message</small>
+                        </div>
+                        <div class="form-control-update">
+                            <input id="name-update" type="text" placeholder="Name">
+                            <small class="update">Error Message</small>
+                        </div>
+                        <div class="form-control-update">
+                            <input id="price-update" type="text" placeholder="Price">
+                            <small class="update">Error Message</small>
+                        </div>
+                        <div class="form-control-update">
+                            <input id="quantity-update" type="text" placeholder="Quantity">
+                            <small class="update">Error Message</small>
+                        </div>
+                        <div class="form-control-update">
+                            <select name="Categories" id="categories-update">
+                                <option value="" disabled selected>Categories</option>
+                                <option value="1">Fever</option>
+                                <option value="2">Cold</option>
+                                <option value="3">Corona</option>
+                                <option value="4">Cancer</option>
+                            </select>
+                        </div>
+                        <div class="form-control-update">
+                            <input id="manufacture_date-update" type="text" placeholder="ManufactureDate"
+                                onfocus="(type='date')" onblur="(type='text')">
+                            <small class="update">Error Message</small>
+                        </div>
+                        <div class="form-control-update">
+                            <input id="expiry_date-update" type="text" placeholder="ExpiryDate" onfocus="(type='date')"
+                                onblur="(type='text')">
+                            <small class="update">Error Message</small>
+                        </div>
+
+                </form>
+                <button class="btn-update">Update</button>
+            </div>
+            </div>
+
+            <div class="success-msg-update hidden">
+                <button class="close-btn-update">&times;</button>
+                <h2 class="success-txt-update">Medicine Updated Successfully</h2>
+            </div>
+
+            <div class="overlay-update hidden"></div>
+
+        </section>
+    </section>
+
+    <!-- axios cdn -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
